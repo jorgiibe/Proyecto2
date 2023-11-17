@@ -5,13 +5,6 @@
  */
 package principal;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- *
- * @author JORGE
- */
 public interface Observador {
     void notificar();
 }

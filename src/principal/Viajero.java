@@ -4,7 +4,7 @@ package principal;
  *
  * @author JORGE
  */
-public class Viajero {
+public class Viajero implements Observador{
 
     private String nombre;
     private Vuelo vuelo;
@@ -16,8 +16,7 @@ public class Viajero {
     }
 
     public void notificar() {
-        System.out.println(nombre + "<-- Notificar: "
-                + vuelo.getUltimoSuceso());
+        System.out.println(nombre + "<-- Notificar: " + vuelo.getUltimoSuceso());
     }
 
 }

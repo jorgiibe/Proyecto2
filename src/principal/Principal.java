@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package principal;
 
 /**
@@ -15,15 +10,33 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         Vuelo vuelo = new Vuelo("IB123 destino París");
-        Viajero oscar = new Viajero("Oscar", vuelo);
-        vuelo.suscribirObservador(oscar);
-        Viajero pepe = new Viajero("Pepe", vuelo);
-        vuelo.suscribirObservador(pepe);
+                
+        Viajero andrea = new Viajero("Andrea", vuelo);
+        Viajero diego = new Viajero("Diego", vuelo);
+        Viajero katty = new Viajero("Katty", vuelo);
+        Viajero jorge = new Viajero("Jorge", vuelo);
+        Viajero fausto = new Viajero("fausto", vuelo);
+        
+        vuelo.suscribirObservador(andrea);
+        vuelo.suscribirObservador(diego);
+        vuelo.suscribirObservador(katty);
+        vuelo.suscribirObservador(jorge);
+        vuelo.suscribirObservador(fausto);
+        
+        System.out.println("+++++++++++++++++++++++++++++++++++++");
         vuelo.setUltimoSuceso("Llegada del vuelo.");
-        vuelo.eliminarObservador(pepe);
-        vuelo.setUltimoSuceso("Salida de viajeros");
+        System.out.println("+++++++++++++++++++++++++++++++++++++");
+        
 
+        vuelo.eliminarObservador(fausto);
+        vuelo.eliminarObservador(jorge);
+        
+        
+        System.out.println("-------------------------------------");
+        vuelo.setUltimoSuceso("Salida de viajeros");
+        System.out.println("-------------------------------------");
     }
 
 }

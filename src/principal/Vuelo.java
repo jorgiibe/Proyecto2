@@ -6,6 +6,7 @@ import java.util.List;
 /**
  *
  * @author JORGE
+ * Extendes permite que vuelo herede de Observado
  */
 public class Vuelo extends Observado {
 

@@ -11,7 +11,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         
-        Vuelo vuelo = new Vuelo("IB123 destino París");
+        Vuelo vuelo = new Vuelo("TAME-123 destino París");
                 
         Viajero andrea = new Viajero("Andrea", vuelo);
         Viajero diego = new Viajero("Diego", vuelo);
